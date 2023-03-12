@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Agregar</title>
+</head>
+<body>
+    <div>
+        <form action="/user/create" id="customers" method="post">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Your name..">
+        
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Your last name..">
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your occupation">
+        
+            <input type="submit" value="Add">
+        </form>
+    </div>  
+</body>
+</html>
